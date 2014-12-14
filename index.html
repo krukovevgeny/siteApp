@@ -1,0 +1,78 @@
+<html lang="en" ng-app="siteApp">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width" />
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Simple Sidebar - Start Bootstrap Template</title>
+
+<!-- Angular -->
+<script src="js/vendor/angular/angular.js"></script>
+<script src="js/vendor/angular/angular-route.js"></script>
+<script src="js/main.js"></script>
+<script src="js/controllers.js"></script>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/simple-sidebar.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style type="text/css"></style></head>
+
+        <body data-feedly-mini="yes">
+
+          <div id="wrapper" class="">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+              <ul class="sidebar-nav" ng-controller="MenuListCtrl">
+                <li class="sidebar-menu">
+                  <a href="#" id="menu_togg">Меню</a>
+                </li>
+                 <li class="{{menu.class}}" ng-repeat="menu in menus" ng:click="select_menu(menu)">
+                  <a href="" id="{{menu.id}}">
+                    <span class="icon" style="{{menu.icon}}"></span>
+                    <span class="text">{{menu.text}}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper" ng-view>
+             
+           </div>
+           <!-- /#page-content-wrapper -->
+
+         </div>
+         <!-- /#wrapper -->
+
+         <!-- jQuery -->
+         <script src="js/vendor/jquery-1.11.1.min.js"></script>
+
+         <!-- Bootstrap Core JavaScript -->
+         <script src="js/vendor/bootstrap.js"></script>
+
+         <!-- Menu Toggle Script -->
+         <script>
+          $("#menu_togg").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+          });
+        </script>
+
+
+      </body>
+      </html>
