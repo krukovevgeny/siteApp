@@ -7,112 +7,112 @@ angular.module('siteApp')
     		{
     			'class':'sidebar-brand',
     			'id':'',
-     			'text': 'Название',
+     			'text': 'BMS CLOUD',
      			'icon': 'background-image:url(img/icons/svg/world80.svg)',
      			'link': 'Main'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Система',
+     			'text': 'СИСТЕМА',
      			'icon': 'background-image:url(img/icons/svg/business120.svg)',
      			'link': 'System'
  			},
 			{
     			'class':'',
     			'id':'',
-     			'text': 'Возможности',
+     			'text': 'ВОЗМОЖНОСТИ',
      			'icon': 'background-image:url(img/icons/svg/circular156.svg)',
      			'link': 'Opportunity'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Приемущество',
+     			'text': 'ПРИЕМУЩЕСТВО',
      			'icon': 'background-image:url(img/icons/svg/business107.svg)',
      			'link': 'Advantage'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Пример использования',
+     			'text': 'ИСПОЛЬЗОВАНИЕ',
      			'icon': 'background-image:url(img/icons/svg/business112.svg)',
      			'link': 'Example'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Сделать заказ',
+     			'text': 'СДЕЛАТЬ ЗАКАЗ',
      			'icon': 'background-image:url(img/icons/svg/businessmen26.svg)',
      			'link': 'Order'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Контакты',
+     			'text': 'КОНТАКТЫ',
      			'icon': 'background-image:url(img/icons/svg/standing77.svg)',
      			'link': 'Contacts'
  			},
  			{
     			'class':'sidebar-brand',
     			'id':'',
-     			'text': 'Модули :',
+     			'text': 'МОДУЛИ',
      			'icon': 'background-image:url(img/icons/svg/three115.svg)',
      			'link': 'Modules'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Сервер',
+     			'text': 'СЕРВЕР',
      			'icon': 'background-image:url(img/icons/svg/business111.svg)',
      			'link': 'Server'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Аналитика',
+     			'text': 'АНАЛИТИКА',
      			'icon': 'background-image:url(img/icons/svg/businessman83.svg)',
      			'link': 'Analises'
  			}, 			
  			{
     			'class':'',
     			'id':'',
-     			'text': '1С:Предприятие 8',
+     			'text': '1С:ПРЕДПРИЯТИЕ',
      			'icon': 'background-image:url(img/icons/svg/businessman110.svg)',
      			'link': '1c'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Приложения',
+     			'text': 'ПРИЛОЖЕНИЯ',
      			'icon': 'background-image:url(img/icons/svg/businessman116.svg)',
      			'link': 'Applications'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Устройства',
+     			'text': 'УСТРОЙСТВА',
      			'icon': 'background-image:url(img/icons/svg/man259.svg)',
      			'link': 'Devices'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Интернет',
+     			'text': 'ИНТЕРНЕТ',
      			'icon': 'background-image:url(img/icons/svg/men19.svg)',
      			'link': 'Internet'
  			},
  			{
     			'class':'sidebar-brand',
     			'id':'',
-     			'text': 'Дополнительно:',
+     			'text': 'ДОПОЛНИТЕЛЬНО',
      			'icon': 'background-image:url(img/icons/svg/standing64.svg)',
      			'link': 'Advanced'
  			},
  			{
     			'class':'',
     			'id':'',
-     			'text': 'Разработки',
+     			'text': 'РАЗРАБОТКИ',
      			'icon': 'background-image:url(img/icons/svg/online22.svg)',
      			'link': 'Development'
  			}

@@ -1,13 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=EB+Garamond&subset=cyrillic);
-@font-face {
-    font-family: VacK8jp9; /* Гарнитура шрифта */
-    src: url(../fonts/VacK8jp9.ttf); /* Путь к файлу со шрифтом */
-   }
 
-@font-face {
-  font-family: TF;
-  src: url(../fonts/TF.otf) format("opentype");
-}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -16,16 +7,36 @@
 body
 {
 
-
-background: #392d1f;
-}
+	background:#fff;
+/* background: #392d1f;
+  background: grey;
+*/}
 
 
 #main_header h1
 {
-	font-family: VacK8jp9, 'Comic Sans MS', cursive;
-	font-size: 54px;
+
+	text-shadow: 1px 0px 3px #4d4d4d;
+	color: black;
+	text-align: center;
+	line-height: normal;
+	font: 90px 'LeagueGothicRegular';
+	text-align: center;line-height: normal;
 }
+
+#Main_Title
+{
+	text-shadow: 1px 0px 1px #4d4d4d;
+	color: black;
+	text-align: center;
+	line-height: normal;
+	font: 40px 'LeagueGothicRegular';
+	letter-spacing: 0;
+	font-size: 2.6em;
+	text-align: center;
+    font-variant: small-caps;
+}
+
 
 .mainpage_wall
 {
@@ -33,17 +44,12 @@ background: #392d1f;
 	
     border: 10px solid transparent;
     border-width: 10px 0;
-    background-image:
-        linear-gradient(#eaebdd, #eaebdd),
-        linear-gradient(to bottom right, transparent 50.5%, #eaebdd 50.5%),
-        linear-gradient(to bottom left, transparent 50.5%, #eaebdd 50.5%),
-        linear-gradient(to top right, transparent 50.5%, #eaebdd 50.5%),
-        linear-gradient(to top left, transparent 50.5%,#eaebdd  50.5%);
-    background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
-    background-position: 0 0, 5px 0, 10px 0, 5px 100%, 5px 100%;
-    background-size: auto auto, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
-    background-clip: padding-box, border-box, border-box, border-box, border-box;
-    background-origin: padding-box, border-box, border-box, border-box, border-box;
+background-image: linear-gradient(skyblue, skyblue), linear-gradient(to bottom right, transparent 50.5%, skyblue 50.5%), linear-gradient(to bottom left, transparent 50.5%, skyblue 50.5%), linear-gradient(to top right, transparent 50.5%, skyblue 50.5%), linear-gradient(to top left, transparent 50.5%,skyblue 50.5%);
+background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+background-position: 0 0, 10px 0, 5px 0px, 10px 100%, 8px 100%;
+background-size: auto auto, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
+background-clip: padding-box, border-box, border-box, border-box, border-box;
+background-origin: padding-box, border-box, border-box, border-box, border-box;
 
 
 }
@@ -70,16 +76,26 @@ background: #392d1f;
 
 .mainpage_wall3
 {
+	
+	font-family: 'Trebuchet MS';
+	color: #444;
+	text-decoration: none;
+	word-spacing: normal;
+	text-align: left;
+	letter-spacing: 0;
+	line-height: 1.5em;
+	font-weight: normal;
+    font-variant: small-caps;
+
+
 	width: 100%;
 	padding: 10px;
 	margin-left: -10px;
-	font-family: 'EB Garamond';
 	font-size: 18px;
-    
-	border: 4px double #ffffff;
-	-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.35);
+    border: 1px black solid;
+ 	-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.35); 
 	-moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.35);
-	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.35);
+	box-shadow: -1px 1px 10px rgba(0,0,0,0.35);
 
  	background-color: #fefef4;
 
