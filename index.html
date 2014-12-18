@@ -34,10 +34,11 @@
 
         <body data-feedly-mini="yes">
 
-          <div id="wrapper" class="">
+          <div id="wrapper" class="container-fluid">
 
+          <div class="row-fluid">
             <!-- Sidebar -->
-            <div id="sidebar-wrapper">
+            <div id="sidebar-wrapper" class="span1 navbar-static-bottom">
               <ul class="sidebar-nav" ng-controller="MenuListCtrl">
                 <li class="sidebar-menu">
                   <a href="#" id="menu_togg">MENU</a>
@@ -54,11 +55,12 @@
             <!-- /#sidebar-wrapper -->
 
             <!-- Page Content -->
-            <div id="page-content-wrapper"  ng-view>
+            <div id="page-content-wrapper"   class="span11" ng-view>
              
            </div>
            <!-- /#page-content-wrapper -->
-
+          
+          </div>
          </div>
          <!-- /#wrapper -->
 
@@ -73,6 +75,8 @@
           $("#menu_togg").click(function(e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
+            $("#page-content-wrapper").toggleClass("toggled");
+
           });
         </script>
 
