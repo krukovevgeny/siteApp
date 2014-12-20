@@ -7,217 +7,55 @@
  /* Toggle Styles */
 
  #wrapper {
-    padding-left: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    margin-left: 220px;
 }
 
 #sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    width: 220px;
-    height: 100%;
-    margin-left: -220px;
-    background: #005A69;
-
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-
 }
 
-/* Sidebar Styles */
-
 .sidebar-nav {
-    position: absolute;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 .sidebar-nav .text {
-    text-align: center;
 }
 
 .sidebar-nav li {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
+    display:inline-block;
+    padding: 10px;
+    padding-bottom: 0px;
 }
 
 .sidebar-nav li a {
-    height: 50px;
-    display: block;
-    text-decoration: none;
-    color: white;
-    white-space:nowrap;
-    
 }
 
 .sidebar-nav li a .icon {
-    float: left;
-    width: 48px;
-    height: 40px;
-    margin-top: 5px;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    background-position: center center;
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-    -webkit-filter: invert(100%);    
-
 }
 
-.sidebar-nav li a .text{
-    margin-left: 5px;
-    margin-top: 15px;
-    float: left;
+.sidebar-nav li a .text {
 }
 
 .sidebar-nav li a:hover {
-    text-decoration: none;
-    color: white;
-    background: rgba(0,0,0,0.9);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-
-    -webkit-filter: invert(100%);    
-
 }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
-    text-decoration: none;
 }
 
 .sidebar-nav > .sidebar-brand {
-    font-size: 18px;
-    padding-top: 35px;
-    margin-bottom: 5px;
-
 }
 
 .sidebar-nav > .sidebar-menu {
-    display:none;
 }
 
 .sidebar-nav > .sidebar-brand:hover {
-    color: black;
 }
 
-#menu_togg
-{
-    padding-top: 10px;
-}
 
 @media(max-width:768px) 
 {
-
-
-    #wrapper {
-        padding: auto;
-        margin: auto;
-    }
-
-    #sidebar-wrapper {
-        position: fixed;
-        background: #005A69;
-        height: 60px;
-        width: 100%;
-        padding: auto;
-        margin: auto;
-
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-
-    }
-
-    #wrapper.toggled #sidebar-wrapper
-    {
-        position: relative;
-        height: 100% ;
-
-    }
-
-    #page-content-wrapper {
-        margin-left: auto;
-        margin-top: 60px;
-        height: 0px;
-    }
-
-.toggled #page-content-wrapper  {
-        height: 0px;
-        display: none;
-    }
-
-
-    .sidebar-nav  > *  {
-        display:none;
-        width: 100%;
-    }
-
-    #wrapper.toggled .sidebar-nav  > *  {
-        display:block;
-        font-size: 18px;
-        padding: 0px;
-        margin: 10px;
-        line-height: 30px;
-        width: 100%;
-    }
-
-
-    .sidebar-nav > .sidebar-menu {
-        display:block;
-        font-size: 18px;
-        padding-top: 0px;
-        text-align: center;
-
-    }
-    
-    .sidebar-nav li {
-        border: 0;
-        font: inherit;
-        vertical-align: baseline;
-    }
-
-    .sidebar-nav li a {
-        height: 50px;
-        display: block;
-        text-decoration: none;
-        color: #999999;
-        white-space:nowrap
-
-    }
-
-    .sidebar-nav li a .icon {
-        float: left;
-        width: 40px;
-        height: 40px;
-        margin-top: 5px;
-        background-repeat: no-repeat;
-        -moz-background-size: 30px 19px;
-        -o-background-size: 30px 19px;
-        -webkit-background-size: 30px 19px;
-        background-size: 48px 40px;
-        background-position: center center;
-
-    }
-
-    .sidebar-nav li a .text{
-        float: left;
-    }
-
 
 }
 

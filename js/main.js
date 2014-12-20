@@ -24,7 +24,7 @@ function ($routeProvider, $locationProvider, $httpProvider)
 
     $routeProvider.otherwise(               {redirectTo:  '/404'});
 
-    $locationProvider.html5Mode(false).hashPrefix('!');
+    $locationProvider.html5Mode(false).hashPrefix('');
 
 }])
   	.run(['$rootScope', '$location', '$http',

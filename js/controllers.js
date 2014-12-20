@@ -2,127 +2,163 @@
 angular.module('siteApp')
 .controller('MenuListCtrl', ['$rootScope', '$http', '$scope',  '$location', function($rootScope, $http, $scope, $location) 
 {
+    
     $scope.menus = 
   		[
     		{
     			'class':'sidebar-brand',
     			'id':'',
-     			'text': 'BMS CLOUD',
-     			'icon': 'background-image:url(img/icons/svg/world80.svg)',
+     			'text': 'BISNESS CLOUD',
+     			'icon': 'img/icons/svg/world80.svg',
      			'link': 'Main'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'СИСТЕМА',
-     			'icon': 'background-image:url(img/icons/svg/business120.svg)',
+     			'icon': 'img/icons/svg/business120.svg',
      			'link': 'System'
  			},
 			{
     			'class':'',
     			'id':'',
      			'text': 'ВОЗМОЖНОСТИ',
-     			'icon': 'background-image:url(img/icons/svg/circular156.svg)',
+     			'icon': 'img/icons/svg/circular156.svg',
      			'link': 'Opportunity'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'ПРИЕМУЩЕСТВО',
-     			'icon': 'background-image:url(img/icons/svg/business107.svg)',
+     			'icon': 'img/icons/svg/business107.svg',
      			'link': 'Advantage'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'ИСПОЛЬЗОВАНИЕ',
-     			'icon': 'background-image:url(img/icons/svg/business112.svg)',
+     			'icon': 'img/icons/svg/business112.svg',
      			'link': 'Example'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'СДЕЛАТЬ ЗАКАЗ',
-     			'icon': 'background-image:url(img/icons/svg/businessmen26.svg)',
+     			'icon': 'img/icons/svg/businessmen26.svg',
      			'link': 'Order'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'КОНТАКТЫ',
-     			'icon': 'background-image:url(img/icons/svg/standing77.svg)',
+     			'icon': 'img/icons/svg/standing77.svg',
      			'link': 'Contacts'
  			},
  			{
     			'class':'sidebar-brand',
     			'id':'',
      			'text': 'МОДУЛИ',
-     			'icon': 'background-image:url(img/icons/svg/three115.svg)',
+     			'icon': 'img/icons/svg/three115.svg',
      			'link': 'Modules'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'СЕРВЕР',
-     			'icon': 'background-image:url(img/icons/svg/business111.svg)',
+     			'icon': 'img/icons/svg/business111.svg',
      			'link': 'Server'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'АНАЛИТИКА',
-     			'icon': 'background-image:url(img/icons/svg/businessman83.svg)',
+     			'icon': 'img/icons/svg/businessman83.svg',
      			'link': 'Analises'
  			}, 			
  			{
     			'class':'',
     			'id':'',
      			'text': '1С:ПРЕДПРИЯТИЕ',
-     			'icon': 'background-image:url(img/icons/svg/businessman110.svg)',
+     			'icon': 'img/icons/svg/businessman110.svg',
      			'link': '1c'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'ПРИЛОЖЕНИЯ',
-     			'icon': 'background-image:url(img/icons/svg/businessman116.svg)',
+     			'icon': 'img/icons/svg/businessman116.svg',
      			'link': 'Applications'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'УСТРОЙСТВА',
-     			'icon': 'background-image:url(img/icons/svg/man259.svg)',
+     			'icon': 'img/icons/svg/man259.svg',
      			'link': 'Devices'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'ИНТЕРНЕТ',
-     			'icon': 'background-image:url(img/icons/svg/men19.svg)',
+     			'icon': 'img/icons/svg/men19.svg',
      			'link': 'Internet'
  			},
  			{
     			'class':'sidebar-brand',
     			'id':'',
      			'text': 'ДОПОЛНИТЕЛЬНО',
-     			'icon': 'background-image:url(img/icons/svg/standing64.svg)',
+     			'icon': 'img/icons/svg/standing64.svg',
      			'link': 'Advanced'
  			},
  			{
     			'class':'',
     			'id':'',
      			'text': 'РАЗРАБОТКИ',
-     			'icon': 'background-image:url(img/icons/svg/online22.svg)',
+     			'icon': 'img/icons/svg/online22.svg',
      			'link': 'Development'
  			}
    		];
+
+/*
+$scope.menus = 
+        [
+            {
+                'class':'',
+                'id':'',
+                'text': 'ИДЕИ',
+                'icon': '',
+                'link': 'Main'
+            },
+            {
+                'class':'',
+                'id':'',
+                'text': 'ЦЕНА',
+                'icon': '',
+                'link': 'Main'
+            },
+            {
+                'class':'',
+                'id':'',
+                'text': 'СЕРВИСЫ',
+                'icon': '',
+                'link': 'Main'
+            },
+            {
+                'class':'',
+                'id':'',
+                'text': 'СТОИМОСТЬ',
+                'icon': '',
+                'link': 'Main'
+            }           
+        ];
+*/
     $scope.select_menu = function(menu) 
    {
         $("#wrapper").toggleClass("toggled");
         $location.path('/' + menu.link);
-
-  };
+   };
+       new gnMenu( document.getElementById( 'gn-menu' ) );
+    
   }]);
 
 // Контроллер, отображающий Заголовок на Главной странице (большие буквы)
