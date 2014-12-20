@@ -8,7 +8,7 @@ angular.module('siteApp')
     		{
     			'class':'sidebar-brand',
     			'id':'',
-     			'text': 'BISNESS CLOUD',
+     			'text': 'BUSINESS CONTROL',
      			'icon': 'img/icons/svg/world80.svg',
      			'link': 'Main'
  			},
