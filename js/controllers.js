@@ -158,14 +158,27 @@ $scope.menus =
         $location.path('/' + menu.link);
    };
        new gnMenu( document.getElementById( 'gn-menu' ) );
+
+
     
   }]);
 
 // Контроллер, отображающий Заголовок на Главной странице (большие буквы)
 angular.module('siteApp')
-.controller('MainCtrl', ['$rootScope', '$scope', '$route', '$http', '$location', '$routeParams', function($rootScope, $scope, $route, $http, $location, $routeParams) 
+.controller('MainCtrl', ['$scope', function($scope) 
 {
-  $scope.route = $route;
-  $scope.routeParams = $routeParams;
+
+    console.log($(window).height());
+    console.log($("#main_header").height());
+    console.log($("#Main_Title_row").height());
+    
+    $scope.$watch($(window).height(),
+    function()
+    { 
+          $scope.myStyle = {'padding-bottom': ($(window).height() - $("#main_header").height() - $("#Main_Title_row").height()  - 80) + 'px'};
+    });
 
 }]);
+
+
+

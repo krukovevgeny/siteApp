@@ -58,7 +58,12 @@ body
 .gn-menu-wrapper
 {
 	background: rgb(255,255,255); /* Old browsers */
-	border-right: 1px solid gray;
+	border-right: 0px solid gray;
+}
+
+.gn-menu-wrapper.gn-open-all,
+.gn-menu-wrapper.gn-open-part {
+	border: 1px solid gray;
 }
 
 .gn-menu li
@@ -191,7 +196,7 @@ body
 	-moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.35);
 	box-shadow: -1px 1px 10px rgba(0,0,0,0.35);
 
- 	background-color: #fefef4;
+ 	background-color: white;
 
 }
 
